@@ -38,7 +38,34 @@ In programming terms, if we wantd to find something in an array using quick-sort
 *O, Omega, and Theta are not the same as Best, Worst, and Expected.*
 
 ### Space Complexity
-Where as time complexity focuses on the number of steps taken to complete a task, space complexity measures the amount of space - or memory - taken. 
-In the simplest of example, think of cooking a meal. We're making a big meal of fried rice. Regardless of how you cook it, the steps will practically be the same. We need cooked rice. We need fried veggies and eggs. We need flavor and some chopped foods. While the number of steps taken won't really change much, the number of pots and pans we use certaily can. Do we chop the veggies on the same cutting board as raw meat? Did we fry up eggs in the same wok as the veggies? Did we mix seasonings togther in their own container, or throw them all in the pan? Are we stirring everything with the same utensil? Will that utensil also scoop out the rice?
+Where as time complexity focuses on the number of steps taken to complete a task, space complexity measures the amount of space - or memory - taken *at any one point in the program.* This does not measure the space taken up from start to finish. Only the maximum amount of space needed to run the program.
+
+In the simplest of example, think of cooking a meal. We're making a big meal of fried rice. Regardless of how you cook it, the steps will practically be the same. We need cooked rice. We need fried veggies and eggs. We need flavor and some chopped foods. While the number of steps taken won't really change much, the number of pots and pans we use certaily can. 
+- Do we chop the veggies on the same cutting board as raw meat? 
+- Did we fry up eggs in the same wok as the veggies? 
+- Did we mix seasonings togther in their own container, or throw them all in the pan?
+- Are we stirring everything with the same utensil? 
+- Will that utensil also scoop out the rice?
+
 The outcome will be the same either way, but the cost in dish-doing afterwards is where space complexity concerns itself. We can take up as much space as we want, but could we get away with using less? Could we go faster if we used more?
 
+[Example 1](./code-ex-01.py)
+Main Takeaway:
+Space on the callstack counts towards space complexity.
+
+[Example 2](./code-ex-02.py)
+Main Takeaway:
+Space complexity measures the most space taken at any one point - like the peak on a graph.
+
+Big O(1) is not an exact speed or size. It only means that it is the same each time. It is *Constant*.
+This mean that other complexities can have better peformance than constant time - depending on the input, of course.
+
+### Dropping Constants
+Big O does not describe the speed itself, but the relationship of speed to the growth of input size. When we say something runs at Big O(n), we aren't saying it runs "n fast". It means that the runtime increases at the same rate the input size increases.
+
+The same complexity can differ slightly when taking into account constants. But this is not something we actaually do. A single for-loop (Big O(n)) logically seems faster than two for-loops (Big O(2n)). But then we'd have to factor in and calculate complexity based on what each for loop is doing, and that's gtting into extrme nitty-gritty territory. Instead, complexities are scaled down witout any constants/coefficients. Big O(n) is just Big O(n).
+*This differs from Big O(n log n)*
+
+[Example 3](./code-ex-03.py)
+Main Takeaway:
+Boil tings down to their most basic form without multiplying. Linear, quadratic, constant, etc.
