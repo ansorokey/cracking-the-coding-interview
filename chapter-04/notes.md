@@ -1,5 +1,7 @@
 # Big O
+![](/assets/images/big-o-anime.jpg)
 
+(Not that one)
 ## What is Big O?
 Simpy put, Big O is how efficient an algorithm is. It can refer to both the time and space needed to perform a specific task.
 
@@ -18,6 +20,8 @@ Some of the most common runtimes include:
 - O(log N)
 - O(N^2)
 - O(2^n)
+
+![Big O Complexities](/assets/images/big-o-graph.jpeg)
 
 ***
 In addition to Big O, there is also Big Theta and Big Omega.
@@ -69,3 +73,63 @@ The same complexity can differ slightly when taking into account constants. But 
 [Example 3](./code-ex-03.py)
 Main Takeaway:
 Boil tings down to their most basic form without multiplying. Linear, quadratic, constant, etc.
+
+### Dropping Non-Dominant Terms
+The same principle applies to non-dominant terms. Meaning additional runtimes in the expression.
+- O(n^2 + n) wold just be Big O(n^2)
+- O(n + log n) is just O(n)
+- O(5(2^n) + 100Nn^100) is just O(2^n)
+
+Thecase where we do not want to remove additional terms is seperate variables. N can be reduced because it is one variable, but a or b are separate. They should be reduced individually.
+- O(b^2 + a) is acceptable as is
+
+### Multi-Part Algorithms: Add vs Multiply
+When do we add the speed of algorithms and when do we multiply them?
+- If each action is unrelated, it's additive
+- If each action is dependant, it's multiplicative.
+
+[Exmple 4](./code-ex-04.py)
+Main Takeaway:
+Nesting means multiply. A steps B times.
+
+### Amortized Time
+Ma'am, I'm a programmer, not a pro-grammar. What does "amortize" even mean?
+> "To gradualy write off or reduce"
+Thank you, Merriam-Webster
+
+With that in mind, think about an array. In languages like JavaScript or Python, n array is dynamically sized. This means that us humans can add contents to the array/list without having to worry about reaching capacity.
+On the computer side of things, capacity is being reached. When this happens, a new larger array is created, the contents are copied over, and the new element is added.
+
+If we add an element to the end of an array that isn't empty, its an O(1) ation. But if it is full, technically, we have to copy n items to a new array, making it O(n). But this only happens when the array is full, which happens less oten as the array size increases.
+
+There's some math involved here, but the short and sweet of it is to "amortize" - or write off - the very few O(n) actions into O(1).
+
+### Log N Runtimes
+What is log? A log is that thing Final Destination 2 made everyone scared of. In math terms however, it's like the opposite of an exponent.
+
+As a refresher, an exponential equation has 3 parts. Base, power, result.
+The base is multipled by itself power times to get a result.
+2<sup>4</sup> = 16
+2 * 2 * 2 * 2 = 16
+
+Log is asking how many times we need to divide a base (by 2) until we reach 1.
+16 / 2 = 8 (1)
+8 / 2 = 4 (2)
+4 / 2 = 2 (3)
+2 / 2 = 1 (4)
+So the number of tmes we need to divide 16 by 2 to get 1 is 4. 
+log<sub>2</sub>16 = 4
+
+The easiest way to spot an O(log n) runtime is to look for the number of elements being halved with each step in an algorithm. O(log n) is most commonly seen in binary searches like tree traversal or searching a sorted array.
+
+### Recursie Runtimes
+Recurive algorithms can be tricky and may confused with quadratic runtimes.
+
+[Example 5](./code-ex-05.py)
+Main Takeaway:
+The nuber of times a recursive function branches is its base, raised to the power of the input.
+
+### Examples and Exercises
+[Example 6](./code-ex-06.py)
+[Solution to example 6](./code-ex-06-solution.py)
+
