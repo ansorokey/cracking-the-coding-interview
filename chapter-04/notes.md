@@ -141,3 +141,9 @@ The nuber of times a recursive function branches is its base, raised to the powe
 
 [Example 9](./code-ex-09.py)
 [Solution to example 9](./code-ex-09-solution.py)
+
+[Example 10](./code-ex-10.py)
+[Solution to example 10](./code-ex-10-solution.py)
+
+[Example 11](./code-ex-11.py)
+[Solution to example 11](./code-ex-11-solution.py)
