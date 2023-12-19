@@ -151,3 +151,5 @@ The nuber of times a recursive function branches is its base, raised to the powe
 [Example 12](./code-ex-12.py)
 [Solution to example 12](./code-ex-12-solution.py)
 Lesson: An input that depends on another can be represented as an expression of that term.
+
+[Example 13](./code-ex-13.py)
