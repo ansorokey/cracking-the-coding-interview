@@ -159,3 +159,7 @@ Lesson: A single input n (like an array of strings) can count as separate values
 [Solution to example 14](./code-ex-14-solution.py)
 Lesson: The depth of a tree is log (number of nodes).
 
+[Example 15](./code-ex-15.py)
+[Solution to example 15](./code-ex-15-solution.py)
+Lesson: If we're doing constant work n times, the runtime is whatever n is. N can only be reduced when it's multipicative or divisible. If a power cannot be reduced, neither can a square root.
+
