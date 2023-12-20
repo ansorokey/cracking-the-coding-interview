@@ -1,4 +1,6 @@
 """
+Book example 10
+
 The following function checks if a number is prime.
 This is done by dividing it by numbers less than it.
 What is the runtime?

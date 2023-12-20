@@ -163,3 +163,10 @@ Lesson: The depth of a tree is log (number of nodes).
 [Solution to example 15](./code-ex-15-solution.py)
 Lesson: If we're doing constant work n times, the runtime is whatever n is. N can only be reduced when it's multipicative or divisible. If a power cannot be reduced, neither can a square root.
 
+[Example 16](./code-ex-16.py)
+[Solution to example 16](./code-ex-16-solution.py)
+
+[Example 17](./code-ex-17.py)
+[Solution to example 17](./code-ex-17-solution.py)
+Lesson: Recognize factorial patters (n * n-1 * n-2...) and rember to break apart different actions in a function.
+
