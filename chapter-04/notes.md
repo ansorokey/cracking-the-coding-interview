@@ -170,3 +170,6 @@ Lesson: If we're doing constant work n times, the runtime is whatever n is. N ca
 [Solution to example 17](./code-ex-17-solution.py)
 Lesson: Recognize factorial patters (n * n-1 * n-2...) and rember to break apart different actions in a function.
 
+[Example 18](./code-ex-18.py)
+[Solution](./code-ex-18-solution.py)
+Lesson: The depth of a tree is O(branches^depth) where depth is n. 
