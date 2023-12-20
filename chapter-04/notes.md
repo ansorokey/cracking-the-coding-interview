@@ -153,3 +153,9 @@ The nuber of times a recursive function branches is its base, raised to the powe
 Lesson: An input that depends on another can be represented as an expression of that term.
 
 [Example 13](./code-ex-13.py)
+Lesson: A single input n (like an array of strings) can count as separate values based n what actions need to be taken (max string lngth, length of array)
+
+[Example 14](./code-ex-14.py)
+[Solution to example 14](./code-ex-14-solution.py)
+Lesson: The depth of a tree is log (number of nodes).
+
