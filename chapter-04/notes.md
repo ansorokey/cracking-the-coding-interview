@@ -177,3 +177,7 @@ Lesson: The depth of a tree is O(branches^depth) where depth is n. A branch is t
 [Example 19](./code-ex-19.py)
 REVIEW: I do not undertand the leap in logic here. I may be lacking an understanding of fundemental math. We both agree that fib(n) is O(2^n) but I don't see where n+1 or -2 comes from.
 
+[Example 20](./code-ex-20.py)
+[Solution to example 20](./code-ex-20-soltion.py)
+Lesson: Memoization can cut out all the work that would have previously neeed to be done and turn it into a constant action of looking up a previous result.
+
