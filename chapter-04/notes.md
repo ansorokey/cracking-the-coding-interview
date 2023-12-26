@@ -181,3 +181,7 @@ REVIEW: I do not undertand the leap in logic here. I may be lacking an understan
 [Solution to example 20](./code-ex-20-soltion.py)
 Lesson: Memoization can cut out all the work that would have previously neeed to be done and turn it into a constant action of looking up a previous result.
 
+[Example 21](./code-ex-21.py)
+[Solution](./code-ex-21-solution.py)
+Lesson: Log n does not only apply to tree functions. Big O is all about how runtime increases as n increases.
+
