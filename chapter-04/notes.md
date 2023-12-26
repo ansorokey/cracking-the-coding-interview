@@ -172,4 +172,8 @@ Lesson: Recognize factorial patters (n * n-1 * n-2...) and rember to break apart
 
 [Example 18](./code-ex-18.py)
 [Solution](./code-ex-18-solution.py)
-Lesson: The depth of a tree is O(branches^depth) where depth is n. 
+Lesson: The depth of a tree is O(branches^depth) where depth is n. A branch is the number of separate recursive calls within a function.
+
+[Example 19](./code-ex-19.py)
+REVIEW: I do not undertand the leap in logic here. I may be lacking an understanding of fundemental math. We both agree that fib(n) is O(2^n) but I don't see where n+1 or -2 comes from.
+
