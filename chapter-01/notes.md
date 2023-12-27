@@ -22,6 +22,9 @@ In some languages, array/lists automatically resize themelves. They grow as need
 The math behind this is: let's assume we double the capacity of an array each time it is filled. We have an array of size 32. The size before it was doubled was 16 (n/2). And 8 (n/4) and 4 (n/8) and 2 (n/16) and 1 (n/32).
 Adding the exressions together will get us closer and closer to n, but will never add to n. So we can call this constant in spirit.
 
-[## String Builder]()
+[## String Builder](./string-builder.py)
+
+## Interview Questions
+
 
 

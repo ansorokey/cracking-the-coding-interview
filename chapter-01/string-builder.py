@@ -22,3 +22,12 @@ This eventually reduces to O(xn^2)
 """
 
 """
+using a dynamic array prevents us from having to create new copies with every
+single append
+"""
+
+def stringBuilder(words):
+    sentance = []
+    for word in words:
+        sentance.append(word)
+    return " ".join(sentance)
