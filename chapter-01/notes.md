@@ -25,6 +25,10 @@ Adding the exressions together will get us closer and closer to n, but will neve
 [## String Builder](./string-builder.py)
 
 ## Interview Questions
+[is Unique](./isUnique.py)
+[Solution](./isUnique-solution.py)
 
+[Check Permutation](./check-permutation.py)
 
+[URLify]
 

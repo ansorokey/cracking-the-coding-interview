@@ -1,6 +1,10 @@
 """
 Implement an algorithm to determine if a string has all unique characters.
 What if you cannot use additional data structures?
+
+Hint 1: Try a hash table
+Hint 2: Could a bit vector be useful?
+Hint 3: Can you solve it in O(n log n) time?
 """
 
 """
