@@ -35,3 +35,6 @@ Adding the exressions together will get us closer and closer to n, but will neve
 [Palindrome Permutation Reading](./palindrome-permutation.md)
 [Palindrome Permutaion Solution](./palindrome-permutation.py)
 
+[One Away Reading](./one-away.md)
+[One Away Solution](./one-away.py)
+
