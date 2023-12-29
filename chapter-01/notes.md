@@ -32,3 +32,6 @@ Adding the exressions together will get us closer and closer to n, but will neve
 
 [URLify](./urlify.py)
 
+[Palindrome Permutation Reading](./palindrome-permutation.md)
+[Palindrome Permutaion Solution](./palindrome-permutation.py)
+
